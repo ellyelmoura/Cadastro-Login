@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faça o seu login</title>
+    <link rel="stylesheet" href="CSS/styleLogin.css">
+    <link rel="shortcut icon" href="imagens/login-favicon.png" type="image/x-icon">
+    <script src="JS/scriptLogin.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="login-image">
+            <img src="imagens/login-image.svg" alt="login-image">
+        </div>
+
+        <div class="login">
+            <div class="login-header">
+                <div class="title">
+                    <h2>Olá!<br>Seja bem-vindo de volta.</h2>
+                </div>
+                <div class="text-login">
+                    <h3>Faça o seu login agora</h3>
+                    <div id="msgerro"></div>
+                </div>
+            
+        </div>
+        <div class="body-login">
+            <input type="email" name="email" id="email" placeholder="Digite o seu email">
+            <input type="password" name="pwd" id="pwd" placeholder="Digite a sua senha">
+        </div>
+        <div class="button-login">
+            <button onclick="enter()" type="submit">Entrar</button>
+        </div>
+        <div class="create-account">
+            <p>Não tem uma conta?</p>
+            <a href="cadastro.html">Cadastre-se</a>
+        </div>
+    </div>
+    </div>
+</body>
+</html>

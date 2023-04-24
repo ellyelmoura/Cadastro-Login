@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastre-se aqui</title>
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="CSS/styleCad.css">
+    <script src="JS/scriptCad.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="imagens/form-image.svg" alt="form-image"> 
+        </div>
+        <div class="form">
+            <div class="form-header">
+                <div class="title"><h1>Cadastre-se</h1></div>
+                <div class="button"><a href="login.html"><Button>Entrar</Button></a></div>
+            </div>
+            <div id="msgerro"></div>
+            <div id="msgsucesso"></div>
+
+            <form class="form-body" id="form-body" >
+                <div class="form-left">
+                <div class="input-box" >
+                    <label id="labelFirstName" for="first-name">Primeiro Nome</label>
+                    <input type="text" name="first-name" id="first-name" placeholder="Digite o seu primeiro nome" >
+                </div>
+                    <div class="input-box">
+                        <label id="lastName" for="last-name">Sobrenome</label>
+                        <input type="text" name="last-name" id="last-name" placeholder="Digite o seu sobrenome" >
+                    </div>
+                    <div class="input-box">
+                        <label id="labelEmail" for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="@email" >
+                    </div>
+                </div>
+
+                <div class="right">
+                    <div class="input-box">
+                        <label id="labelTel" for="tel">Número</label>
+                        <input type="tel" name="tel" id="tel" placeholder="(XX) XXXXX-XXXX">
+                    </div>
+                    <div class="input-box">
+                        <label id="labelPwd" for="pwd">Senha</label>
+                        <input type="password" name="pwd" id="pwd" placeholder="Digite a sua senha"  minlength="8" maxlength="25">
+                    </div>
+                    <div class="input-box">
+                        <label id="pwdConfirm" for="pwd-confirm">Confirme sua senha</label>
+                        <input type="password" name="pwd" id="pwd-confirm" placeholder="Digite a senha novamente"  minlength="8" maxlength="20">
+                    </div>
+                </div>
+            </form>
+            <div class="submmit">
+                <button type="submit" onclick="save()">Cadastrar</button>
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

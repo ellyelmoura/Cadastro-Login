@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    
+}
+
+.form-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#fde3a7d7 ;
+    padding: 1rem;
+}
+
+ img{
+    width:100%;
+}
+
+.form{
+    width: 50%;
+    background-color: white;
+    padding: 3rem;
+}
+
+.form-header{
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.form-header h1{
+    font-family: "Quicksand", sans-serif;
+    border-bottom: 4px solid #6c63ff;
+}
+
+
+.button button{
+    background-color: #6c63ff;
+    border: 2px solid #6c63ff;
+    width: 80px;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.button button:hover{
+    background-color: transparent;
+    border: 2px solid #6c63ff;
+    color: black;
+}
+
+#msgerro{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: red;
+    width: 60%;
+    
+}
+
+#msgsucesso{
+    display: none;
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Inter', sans-serif;
+    font-size: 14px;
+    color: green;
+    
+}
+
+.form-body{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3rem;
+    font-family: "Inter", sans-serif;
+}
+
+.input-box input{
+    height: 40px;
+    border: none;
+    border-bottom: 1px solid #6c63ff;
+    padding-left: 5px;
+    margin-top: 8px;
+    margin-bottom: 40px;
+    outline: 0;
+    
+}
+
+.form-left{
+    display: flex;
+    flex-direction: column;
+}
+
+.right{
+    display: flex;
+    flex-direction: column;
+}
+
+form label{
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.gender-title h5{
+    font-family: 'Inter', sans-serif;
+    margin-bottom: 5px;
+}
+
+.radio{
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 3rem;
+    font-family: "Inter", sans-serif;
+}
+
+.radio label{
+    padding: 5px;
+}
+
+.submmit{
+    display: flex;
+    justify-content: center;
+}
+
+.submmit button{
+    width: 80%;
+    margin-top: 100px;
+    padding: 10px;
+    border: 2px solid #6c63ff;
+    background-color: #6c63ff;
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.submmit button:hover{
+    background-color: transparent;
+    border: 2px solid #6c63ff;
+    color: black;
+}   
+
+@media only screen and (max-width: 1379px) {
+
+    .container{
+        width: 90vw;
+        height: 90vh;
+    }
+    
+    .form-image{
+        display: none;
+    }
+
+    .form{
+        width: 100%;
+    }
+
+    .form-header{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .form-body{
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media only screen and (max-width: 726px){
+
+       .container{
+        width: 100%;
+        height: 100vh;
+       }
+
+       .form-header{
+        display: flex;
+        justify-content: space-between;
+       }
+
+
+    .form-body{
+        display: block;
+        flex-direction: column;
+        
+        
+    }
+
+    .input-box{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .input-box label{
+       display: none;
+    }
+
+}
+
+@media only screen and (max-width: 684px){
+
+    .gender-title{
+        margin-top: -40px;
+    }
+    
+    
+    .radio{
+        display: flex;
+        flex-direction: column;
+        gap: 5px;
+    }
+
+
+}
+
+@media only screen and (max-width: 487px){
+
+    .submmit button{
+        margin-bottom: 35px;
+    }
+   
+     .form-header{
+        display: flex;
+        justify-content: center;
+        margin-top: -15px;
+     }
+
+    .button{
+        display: none;
+    }
+
+    .form-body{
+        margin-bottom: 25px;
+    }
+
+    .submmit{
+        margin-top: -30px;
+    }
+
+}
+
+
+
+
+
+
+
+
+
