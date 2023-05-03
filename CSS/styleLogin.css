@@ -2,14 +2,14 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
 }
 
-body{
+body {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -18,7 +18,7 @@ body{
 
 }
 
-.container{
+.container {
     width: 100%;
     height: 100vh;
     display: flex;
@@ -27,7 +27,7 @@ body{
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.397);
 }
 
-.login-image{
+.login-image {
     width: 50%;
     height: 100vh;
     display: flex;
@@ -36,21 +36,21 @@ body{
     background-color: #F1DBB3;
 }
 
-.login-image img{
+.login-image img {
     width: 950px;
 }
 
-.login{
+.login {
     width: 50%;
     height: 90vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    
+
 }
 
-.login-header{
+.login-header {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -60,39 +60,44 @@ body{
     font-family: "Roboto", sans-serif;
 }
 
-.title{
+.title {
     margin-bottom: 65px;
     font-size: 30px;
 }
 
+.title h2 {
+    font-weight: 100;
+}
 
-.text-login{
+
+.text-login {
     margin-bottom: 25px;
     font-size: 20px;
 }
 
-.text-login h3{
+.text-login h3 {
+    font-weight: 100;
     border-right: 4px solid;
-    width: 18ch;
+    width: 19ch;
     white-space: nowrap;
     overflow: hidden;
-    animation: typing 2s steps(18),
-    blinking 0.5s infinite step-end alternate ;
+    animation: typing 2s steps(19),
+        blinking 0.5s infinite step-end alternate;
 }
 
-@keyframes typing{
-    from{
+@keyframes typing {
+    from {
         width: 0;
     }
 }
 
-@keyframes blinking{
-    50%{
+@keyframes blinking {
+    50% {
         border-color: transparent;
     }
 }
 
-#msgerro{
+#msgerro {
     margin-top: 15px;
     text-align: center;
     display: none;
@@ -100,7 +105,7 @@ body{
     color: red;
 }
 
-.body-login{
+.body-login {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -108,22 +113,22 @@ body{
     font-family: "Inter", sans-serif;
 }
 
-input{
+input {
     width: 300px;
     margin-top: 40px;
     height: 45px;
-    border:none;
+    border: none;
     outline: 0;
     border-bottom: 1px solid #6C63FF;
 }
 
-.button-login{
+.button-login {
     margin-top: 40px;
     margin-bottom: 40px;
-    
+
 }
 
-.button-login button{
+.button-login button {
     width: 300px;
     height: 35px;
     border: none;
@@ -137,63 +142,64 @@ input{
     border: 2px solid #6C63FF;
 }
 
-.button-login button:hover{
+.button-login button:hover {
     background-color: transparent;
     color: #6C63FF;
     border-color: #6C63FF;
     font-weight: bold;
 }
 
-.create-account{
+.create-account {
     display: flex;
     gap: 25px;
     font-family: "Inter", sans-serif;
 }
-a{
+
+a {
     color: #6C63FF;
 }
 
 @media only screen and (max-width: 1178px) {
-    .container{
+    .container {
         width: 100%;
         height: 100vh;
     }
 
-    .login-image{
+    .login-image {
         height: 100vh;
     }
 }
 
 @media only screen and (max-width: 1045px) {
-    .login-image{
+    .login-image {
         display: none;
     }
 
-    .login{
+    .login {
         width: 100%;
     }
 }
 
 @media only screen and (max-width: 512px) {
-    h2{
+    h2 {
         font-size: 25px;
     }
 
-    h3{
-        font-size:18px;
+    h3 {
+        font-size: 18px;
     }
 }
 
 @media only screen and (max-width: 325px) {
-    input{
+    input {
         width: 100%;
     }
 
-    .button-login button{
+    .button-login button {
         width: 180px;
     }
 
-    .create-account{
+    .create-account {
         display: flex;
         flex-direction: column;
         align-items: center;
